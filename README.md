@@ -11,6 +11,6 @@ Just pass in the env var `MICRO_API_TOKEN` from your personal token or one gener
 
 ```bash
 ## ./m3o.sh [service] [endpoint] [request]
-
-./m3o.sh helloworld call {"name": "Alice"}
+MICRO_API_TOKEN=XXXXXXXX
+./m3o.sh helloworld call '{"name": "Alice"}'
 ```
