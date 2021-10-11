@@ -6,8 +6,8 @@ function usage() {
   echo "$0 [service] [endpoint] [request] e.g $0 helloworld call {\"name\": \"Alice\"}"
 }
 
-if [ -z "$MICRO_API_TOKEN" ]; then
-  echo "Missing MICRO_API_TOKEN"
+if [ -z "$M3O_API_TOKEN" ]; then
+  echo "Missing M3O_API_TOKEN"
   exit 1
 fi
 
@@ -23,12 +23,12 @@ if [ -z "$SERVICE" ] || [ -z "$ENDPOINT" ]; then
 fi
 
 if [ -n "$REQUEST" ]; then
-  curl  -H "Authorization: Bearer $MICRO_API_TOKEN" \
+  curl  -H "Authorization: Bearer $M3O_API_TOKEN" \
 	-H "Content-Type: application/json" \
 	-d "$REQUEST" \
 	$API_URL/$SERVICE/$ENDPOINT
 else
-  curl  -H "Authorization: Bearer $MICRO_API_TOKEN" \
+  curl  -H "Authorization: Bearer $M3O_API_TOKEN" \
 	-H "Content-Type: application/json" \
 	$API_URL/$SERVICE/$ENDPOINT
 fi
