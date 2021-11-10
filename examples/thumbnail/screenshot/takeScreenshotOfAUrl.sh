@@ -3,6 +3,6 @@ curl "https://api.m3o.com/v1/thumbnail/Screenshot" \
 -H "Authorization: Bearer $M3O_API_TOKEN" \
 -d '{
   "height": 600,
-  "url": "https://m3o.com",
+  "url": "https://google.com",
   "width": 600
 }'
