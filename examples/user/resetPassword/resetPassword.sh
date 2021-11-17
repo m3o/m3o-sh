@@ -4,5 +4,6 @@ curl "https://api.m3o.com/v1/user/ResetPassword" \
 -d '{
   "code": "some-code-from-email",
   "confirmPassword": "newpass123",
+  "email": "joe@example.com",
   "newPassword": "newpass123"
 }'
