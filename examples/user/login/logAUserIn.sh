@@ -3,5 +3,5 @@ curl "https://api.m3o.com/v1/user/Login" \
 -H "Authorization: Bearer $M3O_API_TOKEN" \
 -d '{
   "email": "joe@example.com",
-  "password": "mySecretPass123"
+  "password": "Password1"
 }'
