@@ -6,5 +6,5 @@ curl "https://api.m3o.com/v1/db/Update" \
     "age": 43,
     "id": "1"
   },
-  "table": "users"
+  "table": "example"
 }'

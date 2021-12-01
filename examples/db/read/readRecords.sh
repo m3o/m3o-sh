@@ -3,5 +3,5 @@ curl "https://api.m3o.com/v1/db/Read" \
 -H "Authorization: Bearer $M3O_API_TOKEN" \
 -d '{
   "query": "age == 43",
-  "table": "users"
+  "table": "example"
 }'
