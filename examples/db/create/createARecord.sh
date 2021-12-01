@@ -8,5 +8,5 @@ curl "https://api.m3o.com/v1/db/Create" \
     "isActive": true,
     "name": "Jane"
   },
-  "table": "people"
+  "table": "example"
 }'
