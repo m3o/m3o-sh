@@ -3,8 +3,7 @@ curl "https://api.m3o.com/v1/function/Deploy" \
 -H "Authorization: Bearer $M3O_API_TOKEN" \
 -d '{
   "entrypoint": "helloworld",
-  "name": "my-first-func",
-  "project": "tests",
+  "name": "helloworld",
   "repo": "github.com/m3o/nodejs-function-example",
   "runtime": "nodejs14"
 }'
