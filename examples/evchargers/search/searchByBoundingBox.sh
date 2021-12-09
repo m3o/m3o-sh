@@ -1,7 +1,7 @@
 curl "https://api.m3o.com/v1/evchargers/Search" \
--H "Content-Type: application/json" \
--H "Authorization: Bearer $M3O_API_TOKEN" \
--d '{
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $M3O_API_TOKEN" \
+  -d '{
   "box": {
     "bottom_left": {
       "latitude": 51.52627543859447,
