@@ -6,6 +6,6 @@ curl "https://api.m3o.com/v1/app/Run" \
   "branch": "master",
   "name": "helloworld",
   "port": 8080,
-  "region": "eu-west-1",
+  "region": "europe-west1",
   "repo": "github.com/asim/helloworld"
 }'
