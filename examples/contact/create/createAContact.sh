@@ -5,8 +5,8 @@ curl "https://api.m3o.com/v1/contact/Create" \
 -d '{
   "addresses": [
     {
-      "address": "https://company.of.joe.com",
-      "label": "company address"
+      "label": "company address",
+      "location": "123 street address"
     }
   ],
   "birthday": "1995-01-01",
