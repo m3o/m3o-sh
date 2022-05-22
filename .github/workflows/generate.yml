@@ -1,0 +1,40 @@
+name: Build Shell Examples
+on:
+  repository_dispatch:
+    types: [build_publish_shell]
+
+jobs:
+  generate:
+    name: build Shell examples
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check m3o-sh repo
+        uses: actions/checkout@v3
+        with:
+          path: m3o-sh
+
+      - name: Check micro/services repo
+        uses: actions/checkout@v3
+        with:
+          repository: 'micro/services'
+          path: services
+
+      - name: Generate m3o-sh examples
+        uses: m3o/m3o-generator-action@main
+        with:
+          target: 'shell'
+          services_path: services
+
+      - name: Adjust generated things before pushing
+        working-directory: services
+        
+        run: |
+          # sync the examples to m3o-sh/examples
+          rsync -avz examples/curl/ ../m3o-sh/examples/
+
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9.0.0
+        with:
+          cwd: m3o-sh
+          message: Push to m3o-sh repo
+          pathspec_error_handling: exitImmediately
