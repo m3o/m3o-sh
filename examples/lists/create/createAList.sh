@@ -6,5 +6,5 @@ curl "https://api.m3o.com/v1/lists/Create" \
   "items": [
     "This is my list"
   ],
-  "title": "New List"
+  "name": "New List"
 }'

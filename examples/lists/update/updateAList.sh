@@ -8,6 +8,6 @@ curl "https://api.m3o.com/v1/lists/Update" \
     "items": [
       "Updated list text"
     ],
-    "title": "Update List"
+    "name": "Update List"
   }
 }'
