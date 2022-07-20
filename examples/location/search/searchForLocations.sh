@@ -7,7 +7,7 @@ curl "https://api.m3o.com/v1/location/Search" \
     "latitude": 51.511061,
     "longitude": -0.120022
   },
-  "numEntities": 10,
+  "limit": 10,
   "radius": 100,
   "type": "bike"
 }'
