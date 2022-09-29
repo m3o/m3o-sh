@@ -1,11 +1,3 @@
-<p align="center">
-	<a href="https://discord.gg/TBR9bRjd6Z">
-		<img src="https://discordapp.com/api/guilds/861917584437805127/widget.png?style=banner2" alt="Discord Banner"/>
-	</a>
-</p>
-
----
-
 # M3O Shell
 
 M3O.sh provides simple shell access to the Micro API
